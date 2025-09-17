@@ -1,0 +1,25 @@
+{
+  "name": "Congressional District Template",
+  "short_name": "template",
+  "state": "XX",
+  "district_number": "0",
+  "representative": "Template Representative",
+  "party": "X",
+  "population": 0,
+  "counties_description": "Multiple counties",
+  "center": [39.0, -84.0],
+  "default_zoom": 9,
+  "bounds": {
+    "min_lat": 38.0,
+    "max_lat": 40.0,
+    "min_lng": -85.0,
+    "max_lng": -83.0
+  },
+  "created": "template",
+  "last_updated": "template",
+  "data_sources": {
+    "boundaries": "US Census TIGER files",
+    "demographics": "Manual data entry"
+  },
+  "notes": "Template configuration for new congressional districts"
+}

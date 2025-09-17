@@ -1,0 +1,29 @@
+# Core mapping and geospatial libraries
+folium>=0.14.0
+geopandas>=0.14.0
+shapely>=2.0.0
+fiona>=1.9.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# HTTP requests and APIs
+requests>=2.28.0
+
+# Google Sheets integration (optional)
+google-api-python-client>=2.0.0
+google-auth-httplib2>=0.2.0
+google-auth-oauthlib>=1.0.0
+
+# Address geocoding
+geopy>=2.3.0
+
+# Configuration and utilities
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# Development and testing
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0

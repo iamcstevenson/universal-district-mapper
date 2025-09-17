@@ -1,0 +1,43 @@
+{
+  "name": "Kentucky 6th Congressional District",
+  "short_name": "ky-6",
+  "state": "KY",
+  "district_number": "6",
+  "representative": "Andy Barr",
+  "party": "R",
+  "population": 779000,
+  "counties_description": "14 full counties, 2 partial counties",
+  "center": [38.0, -84.25],
+  "default_zoom": 9,
+  "bounds": {
+    "min_lat": 37.472663,
+    "max_lat": 38.525381,
+    "min_lng": -85.074671,
+    "max_lng": -83.45273
+  },
+  "counties": [
+    "Anderson County",
+    "Bath County",
+    "Bourbon County",
+    "Clark County",
+    "Estill County",
+    "Fayette County (partial)",
+    "Fleming County",
+    "Garrard County",
+    "Jessamine County",
+    "Madison County",
+    "Mercer County",
+    "Montgomery County",
+    "Nicholas County",
+    "Powell County",
+    "Scott County",
+    "Woodford County (partial)"
+  ],
+  "created": "2024-09-17",
+  "last_updated": "2024-09-17",
+  "data_sources": {
+    "boundaries": "US Census TIGER Congressional District files",
+    "demographics": "US Census ACS 2022 5-Year Estimates"
+  },
+  "notes": "Central Kentucky district including Lexington metro area"
+}
