@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_92042339004674e4a7b8f792dc172cc0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+        <div style="
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.95);
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+            font-weight: 600;
+            font-size: 18px;
+            color: #2c3e50;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        ">Test KY-06 Map</div>
+        
+    
+        <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+            <button onclick="document.querySelector('.leaflet-container').leafletMap.zoomIn()" style="
+                width: 50px; height: 50px; 
+                background: white; border: 2px solid #ccc;
+                border-radius: 5px; font-size: 24px;
+                margin-bottom: 10px; display: block;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+                cursor: pointer;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                user-select: none;
+            ">+</button>
+            <button onclick="document.querySelector('.leaflet-container').leafletMap.zoomOut()" style="
+                width: 50px; height: 50px;
+                background: white; border: 2px solid #ccc;
+                border-radius: 5px; font-size: 24px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+                cursor: pointer;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                user-select: none;
+            ">−</button>
+        </div>
+        
+        <script>
+            window.addEventListener('load', function() {
+                var mapContainers = document.querySelectorAll('.leaflet-container');
+                if (mapContainers.length > 0) {
+                    mapContainers[0].leafletMap = window[Object.keys(window).find(key => key.startsWith('map_'))];
+                }
+            });
+        </script>
+        
+    
+            <div class="folium-map" id="map_92042339004674e4a7b8f792dc172cc0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_92042339004674e4a7b8f792dc172cc0 = L.map(
+                "map_92042339004674e4a7b8f792dc172cc0",
+                {
+                    center: [37.978928571428575, -84.4353],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_33fadd5a2ee8dafe4f4267f02bb9bae5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 7, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_33fadd5a2ee8dafe4f4267f02bb9bae5.addTo(map_92042339004674e4a7b8f792dc172cc0);
+        
+    
+        function geo_json_b72a3b90588eefeed86be0b6a52be882_styler(feature) {
+            switch(feature.properties.name) {
+                default:
+                    return {"color": "#2c3e50", "dashArray": "5, 5", "fillColor": "#3498db", "fillOpacity": 0.15, "weight": 3};
+            }
+        }
+
+        function geo_json_b72a3b90588eefeed86be0b6a52be882_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b72a3b90588eefeed86be0b6a52be882 = L.geoJson(null, {
+                onEachFeature: geo_json_b72a3b90588eefeed86be0b6a52be882_onEachFeature,
+            
+                style: geo_json_b72a3b90588eefeed86be0b6a52be882_styler,
+        });
+
+        function geo_json_b72a3b90588eefeed86be0b6a52be882_add (data) {
+            geo_json_b72a3b90588eefeed86be0b6a52be882
+                .addData(data);
+        }
+            geo_json_b72a3b90588eefeed86be0b6a52be882_add({"features": [{"geometry": {"coordinates": [[[-84.8583, 38.2486], [-84.8583, 37.6913], [-84.2917, 37.6913], [-83.9444, 37.6913], [-83.9444, 38.0328], [-84.2917, 38.2486], [-84.8583, 38.2486]]], "type": "Polygon"}, "properties": {"district": "06", "name": "KY-06", "state": "Kentucky", "state_fips": "21"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_b72a3b90588eefeed86be0b6a52be882.bindTooltip(
+                `<div>
+                     <b>KY-06</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            geo_json_b72a3b90588eefeed86be0b6a52be882.addTo(map_92042339004674e4a7b8f792dc172cc0);
+        
+</script>
+</html>

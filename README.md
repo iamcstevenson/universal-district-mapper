@@ -565,3 +565,6 @@ MIT License - Use freely for any congressional district mapping needs.
 ---
 
 **Built for iterative political mapping and data visualization. Each overlay idea gets its own branch, ensuring clean development and easy collaboration.**
+## Earlier versions
+
+The two repos this framework replaced are in [`legacy/`](legacy/README.md).
